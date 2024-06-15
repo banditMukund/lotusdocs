@@ -12,13 +12,15 @@
                 {{ with $filename.desktop }}
                     {{ with resources.Get $pathDesktop }}
                         @media (min-width: 768px) {
-                            background-image: url("{{ .RelPermalink }}");
+                            background-color: #ffffff;
+                            
                         }
                     {{ end }}
                 {{ end }}
                 {{ with $filename.mobile }}
                     {{ with resources.Get $pathMobile }}
-                        background-image: url("{{ .RelPermalink }}");
+                        background-color: #ffffff;
+                     
                     {{ end }}
                 {{ end }}
             }
@@ -72,6 +74,26 @@
                             </a>
                         {{ end }}
                         {{ with .cta2Button }}
+                        <a href="{{ relLangURL .url }}" class="btn btn-lg btn-outline-primary me-2 mt-2">
+                            {{ with .icon }}
+                                <span class="material-icons align-middle">{{ . }}</span>
+                            {{ end }}
+                            {{ with .btnText }}
+                                {{ . }}
+                            {{ end }}
+                        </a>
+                        {{ end }}
+                        {{ with .cta3Button }}
+                        <a href="{{ relLangURL .url }}" class="btn btn-lg btn-outline-primary me-2 mt-2">
+                            {{ with .icon }}
+                                <span class="material-icons align-middle">{{ . }}</span>
+                            {{ end }}
+                            {{ with .btnText }}
+                                {{ . }}
+                            {{ end }}
+                        </a>
+                        {{ end }}
+                        {{ with .cta4Button }}
                         <a href="{{ relLangURL .url }}" class="btn btn-lg btn-outline-primary mt-2">
                             {{ with .icon }}
                                 <span class="material-icons align-middle">{{ . }}</span>
