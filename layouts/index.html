@@ -14,7 +14,7 @@
             )}}
         {{ end }}
     {{ end }}
-
+    
     {{ range sort ($map.Get "wgtTpl") ".weight" }}
         {{ $.Scratch.Set "sectionTitle" .sectionTitle }}
         {{ $path := printf "landing/%s.html" .template }}

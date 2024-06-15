@@ -9,17 +9,17 @@ $fw-medium: 600;
 //Custom Fonts
 // $font-family-secondary:     'Nunito', sans-serif;
 
-$text-default:              #3C4257;
+$text-default:              #000000;
 $muted:                     #6b7686;
 $dark:                      #3c4858;
 $btn-color:                 #ffffff;
 $body-color:                $text-default;
 
 //Body Background
-$shadow-sm:                 0 .125rem .25rem rgba($dark,.15);
-$shadow:                    0 0 3px rgba($dark,.15);
-$shadow-md:                 0 5px 13px rgba($dark, .2);
-$shadow-lg:                 0 10px 25px rgba($dark, 0.15);
+$shadow-sm:                 #ffffff;
+$shadow:                    #ffffff;
+$shadow-md:                 #ffffff;
+$shadow-lg:                 #ffffff;
 
 // Overlay
 $overlay:                   rgba($dark, 0.7);
@@ -47,8 +47,8 @@ $topnav-dark-color:         $dark;
 $back-to-top-color:         $white;
 
 //Footer
-$footer:                    #202942;
-$footer-text:               #adb5bd;
+$footer:                    #ffffff;
+$footer-text:               #000000;
 $footer-head-color:         $white;
 $foot-social-color:         #adb5bd;
 $social-icon-color:         #adb5bd;
@@ -163,12 +163,12 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       $blue;
+$primary:       $red;
 $secondary:     $gray-600;
 $success:       $green;
 $info:          $cyan;
 $warning:       $yellow;
-$danger:        $red;
+$danger:        $blue;
 $light:         $gray-100;
 $dark:          $dark;
 // scss-docs-end theme-color-variables
@@ -674,7 +674,7 @@ $aspect-ratios: (
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
 
-// $font-family-sans-serif:      'Nunito', sans-serif;
+// $font-family-sans-serif:      'Ubuntu', Nunito', sans-serif;
 // $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$variable-prefix}font-sans-serif);
